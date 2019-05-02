@@ -8,7 +8,12 @@
 import scrapy
 
 
-class DoubanSpiderItem(scrapy.Item):
+class DoubanMovieItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    name = scrapy.Field()       # movie name
+    ranking = scrapy.Field()    # movie ranking
+    score = scrapy.Field()      # movie score
+    score_num = scrapy.Field()  # movie score from how many people
+    quote = scrapy.Field()      # movie quote
+    link = scrapy.Field()       # movie link
